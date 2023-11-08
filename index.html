@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will e Angel</title>
+    <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="painel">
+        <h1>Aceita namorar comigo?</h1>
+        <button id="sim">SIM!
+            <a href=""></a>
+        </button>
+        <button id="nao" onmouseover="fuja()">NÃO!</button>
+        <img src="./img/tumblr_8957670428e9fedb7214b87866882d68_7bf80651_500.webp" alt="gifs">
+        </div>
+    </div>
+    <script>
+        function fuja() {
+            var botaoNao = document.getElementById('nao');
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+
+        document.getElementById('sim').addEventListener('click', function() {
+            // Abre a segunda página
+            window.open('https://www.youtube.com/watch?v=rLjKF9uJBF0');
+        });
+    </script>
+</body>
+</html>

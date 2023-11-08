@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 100px;
+  background-image: url('img/paisagem-magenta-da-fantasia-da-natureza.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: "Arial", sans-serif;
+}
+
+.painel {
+  text-align: center;
+  margin: auto;
+  background-color: rgba(255, 230, 230, 0.8);
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  border: 2px solid #ff6b6b;
+}
+
+#sim, #nao {
+  height: 40px;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  margin-right: 200px;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+#sim {
+  background: linear-gradient(45deg, #ff1493, #ff69b4, #ff1493, #ff69b4); /* Tons de rosa e vermelho para o botão SIM */
+}
+
+#nao {
+  background: linear-gradient(45deg, #ff1493, #cc00ff, #ff1493, #ff9900); /* Tons de rosa e vermelho para o botão NÃO */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#nao:hover, #sim:hover {
+  transform: scale(2.1);
+  background: linear-gradient(45deg, #ff0000, #ff1493, #ff004c, #ff1493); /* Efeito neon mais intenso no hover */
+}
+
+img {
+  border-radius: 30px;
+  width: 450px;
+  height: 350px;
+  border: 2px solid #ff6b6b;
+}
+
+h1 {
+  font-family: 'Love Ya Like A Sister', cursive;
+  color: red;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url(./img/1.jpg);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video fits within the image */
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the video doesn't stretch beyond the image's boundaries */
+            border-radius: 2px;
+        }
+    </style>
+    <title>cinema</title>
+</head>
+<body>
+    <video src="https://www.youtube.com/watch?v=rLjKF9uJBF0" controls autoplay>
+        <source src="https://www.youtube.com/watch?v=rLjKF9uJBF0" type="video/mp4">
+        Your browser does not support this video.
+    </video>
+</body>
+</html>
